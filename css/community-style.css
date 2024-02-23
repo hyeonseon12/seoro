@@ -1,0 +1,898 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+img,
+video,
+iframe {
+    vertical-align: middle;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    font-family: 'AppleSDGothicNeo';
+    font-size: 16px;
+    line-height: 26px;
+    color: #454545;
+    background-color: #f8f6f2;
+    min-width: 1450px;
+}
+
+
+/*header-top*/
+#header_top {
+    background-color: #758d92;
+    margin-bottom: 100px;
+}
+
+.header_top_inner {
+    width: 1320px;
+    margin: 0 auto;
+}
+
+.header_top_inner .login {
+    display: flex;
+    justify-content: end;
+}
+
+.header_top_inner .login li {
+    font-size: 14px;
+    line-height: 14px;
+    color: #f8f6f2;
+    padding: 13px 0 13px 50px;
+}
+
+.header_top_inner .login li:hover {
+    font-weight: 600;
+}
+
+/*header*/
+#header {
+    width: 100%;
+    height: 100px;
+    background-color: #f8f6f2;
+    overflow: hidden;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    z-index: 5;
+}
+
+.header_inner {
+    width: 1320px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.header_inner #logo {
+    padding: 20px 0;
+}
+
+#gnb {
+    display: flex;
+    align-items: start;
+}
+
+#gnb>li>a {
+    display: inline-block;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 18px;
+    padding: 40px 45px;
+    position: relative;
+}
+
+#gnb>li.cart>a {
+    padding: 37px 0;
+    padding-left: 45px;
+}
+
+#gnb>li>a span {
+    position: relative;
+}
+
+#gnb>li>a span::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -3px;
+    transform: translateX(-50%);
+    width: 0;
+    height: 3px;
+    border-radius: 2px;
+    background-color: #3a5d67;
+    transition: all 0.5s;
+}
+
+#gnb>li:hover>a span::after {
+    width: 110%;
+}
+
+#gnb>li:hover>a span {
+    font-weight: 700;
+    color: #3a5d67;
+}
+
+#gnb>.cart:hover>a>span {
+    border: none;
+}
+
+/*header-submenu*/
+.sub {
+    width: 100%;
+}
+
+.sub li {
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.sub li:hover {
+    color: #7f7e7d;
+}
+
+.sub .sub_sub {
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 500;
+}
+
+.sub li:first-child {
+    padding-top: 0;
+}
+
+/*menu*/
+#section_list {
+    background-color: #3a5d67;
+    margin-bottom: 110px;
+}
+
+.section_list {
+    width: 100%;
+    height: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section_list li {
+    text-align: center;
+    width: 130px;
+    margin: 0 20px;
+}
+
+.section_name {
+    font-size: 16px;
+    font-weight: 500;
+    color: #f8f6f2;
+    margin-top: 10px;
+}
+
+/*seoroday*/
+#seoroday {
+    width: 1320px;
+    margin: 0 auto;
+}
+
+.section_title {
+    font-size: 35px;
+    line-height: 45px;
+    color: #3a5d67;
+    border-bottom: #3a5d67 4px solid;
+    padding-top: 50px;
+}
+
+/*seoroday-monthlyseoro*/
+.monthlyseoro_list {
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.monthlyseoro_list .title {
+    font-weight: 700;
+    padding-top: 20px;
+}
+
+.monthlyseoro_list .date {
+    font-size: 14px;
+}
+
+.monthlyseoro_list .more_btn {
+    display: inline-block;
+    font-weight: 700;
+    color: #3a5d67;
+    border: #3a5d67 solid 2px;
+    padding: 5px 40px 1px 20px;
+    border-radius: 20px;
+    position: relative;
+}
+
+.monthlyseoro_list .more_btn img {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+}
+
+/*seoroday-inform*/
+#seoroday .flex_box {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 90px;
+    margin-bottom: 100px;
+}
+
+.inform_list {
+    width: 760px;
+    height: 480px;
+    color: #3a5d67;
+    border: 4px #3a5d67 solid;
+    border-collapse: collapse;
+}
+
+.inform_list .table_name {
+    width: 220px;
+    height: 480px;
+    box-sizing: border-box;
+    border-right: #ccc solid 2px;
+    text-align: left;
+}
+
+.inform_list .table_name {
+    padding-top: 40px;
+    padding-left: 30px;
+    font-weight: 900;
+    font-size: 28px;
+    line-height: 38px;
+}
+
+.inform {
+    width: 540px;
+    height: 160px;
+    padding-left: 30px;
+    box-sizing: border-box;
+    border-bottom: #ccc solid 2px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.inform_last {
+    border: none;
+}
+
+.inform .category {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.inform .title {
+    font-size: 22px;
+    padding: 10px 0;
+}
+
+.inform .date {
+    font-size: 14px;
+}
+
+.inform .btn_box {
+    padding-right: 40px;
+}
+
+/*seoroday-seoropick*/
+.seoropick_list {
+    width: 550px;
+}
+
+.seoropick_list .title {
+    font-size: 28px;
+    line-height: 28px;
+    color: #3a5d67;
+    padding-left: 30px;
+}
+
+.seoropick_list ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.seoropick {
+    width: 245px;
+    height: 200px;
+    position: relative;
+    color: #f8f6f2;
+    border-radius: 15px;
+    overflow: hidden;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+.seoropick .bg_box {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.seoropick .img_box {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 20px 20px 0 0;
+    overflow: hidden;
+}
+
+.seoropick .text_box {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 20px 25px;
+    box-sizing: border-box;
+    text-align: end;
+}
+
+.seoropick .text_box .date {
+    text-align: start;
+    font-size: 18px;
+    margin-bottom: 105px;
+}
+
+/*bookclub*/
+#bookclub {
+    width: 1320px;
+    margin: 0 auto;
+}
+
+#wrapper {
+    margin-top: 50px;
+    display: flex;
+}
+
+.tabs li a {
+    display: block;
+    width: 500px;
+    height: 200px;
+    padding: 30px;
+    box-sizing: border-box;
+    background-color: #c4cccc;
+    border: #f8f6f2 2px solid;
+    border-radius: 50px 0 0 0;
+    margin-top: -50px;
+    transition: all 0.5s;
+}
+
+.tabs .club_name {
+    font-size: 22px;
+    margin-top: 8px;
+}
+
+.tabs li:first-child a {
+    margin: 0;
+}
+
+.tabs li:last-child a {
+    height: 165px;
+}
+
+.tabs li a:hover {
+    background-color: #9dadaf;
+}
+
+.tabs li.active a {
+    font-weight: 500;
+    color: #f8f6f2;
+    background-color: #758d92;
+    border: #758d92 2px solid;
+}
+
+.tab_container {
+    width: calc(100% - 500px);
+    background-color: #758d92;
+}
+
+.tab_content .book_list {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.book_list .bookclub_book {
+    position: relative;
+    border-radius: 25px;
+    overflow: hidden;
+    margin-top: 45px;
+}
+
+.book_list .bookclub_book .text_box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 40px 30px;
+    box-sizing: border-box;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #f8f6f2;
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+.book_list .bookclub_book:hover .text_box {
+    opacity: 1;
+}
+
+.book_list .bookclub_book .text_box .book_name {
+    margin-top: 15px;
+    font-size: 24px;
+}
+
+.book_list .bookclub_book .text_box .more_btn {
+    margin-top: 160px;
+    text-align: end;
+}
+
+/*bookclub_event*/
+#bookclub_event {
+    width: 1320px;
+    margin: 0 auto;
+    padding: 80px 0 50px;
+}
+
+.bookclub_event_btn {
+    display: block;
+    width: 1320px;
+    height: 300px;
+    border-radius: 65px;
+    overflow: hidden;
+    background-color: #3a5d67;
+    overflow: hidden;
+    position: relative;
+}
+
+.bookclub_event_btn .freebie1,
+.bookclub_event_btn .freebie2,
+.bookclub_event_btn .freebie3,
+.bookclub_event_btn .freebie4,
+.bookclub_event_btn .freebie5,
+.bookclub_event_btn .freebie6 {
+    position: absolute;
+    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.5));
+}
+
+.bookclub_event_btn .freebie1 {
+    bottom: 50px;
+    left: 24%;
+}
+
+.bookclub_event_btn .freebie2 {
+    bottom: 10px;
+    left: 13%;
+}
+
+.bookclub_event_btn .freebie3 {
+    bottom: -30px;
+    left: 2%;
+}
+
+.bookclub_event_btn .freebie4 {
+    top: -30px;
+    left: 40%;
+}
+
+.bookclub_event_btn .freebie5 {
+    bottom: -55px;
+    left: 28%;
+}
+
+.bookclub_event_btn .freebie6 {
+    bottom: -50px;
+    left: 36%;
+}
+
+.bookclub_event_btn .text_box {
+    text-align: end;
+    color: #f8f6f2;
+    padding: 50px;
+    position: absolute;
+    right: 0;
+}
+
+.bookclub_event_btn .text_box .title {
+    font-size: 35px;
+    line-height: 35px;
+    padding-bottom: 20px;
+}
+
+.bookclub_event_btn .text_box .detail {
+    font-size: 16px;
+    line-height: 32px;
+}
+
+.bookclub_event_btn .text_box .detail span {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/*dailylife*/
+#dailylife {
+    width: 1320px;
+    margin: 0 auto;
+}
+
+/*dailylife-forum*/
+.forum {
+    margin-top: 40px;
+}
+
+ul.tabs1 {
+    display: flex;
+}
+
+ul.tabs1 li {
+    padding: 15px 0 3px;
+    margin-right: 40px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+ul.tabs1 li span {
+    cursor: pointer;
+}
+
+html ul.tabs1 li.active {
+    background: url(../image/forum_category_hover.png) top center no-repeat;
+    border-bottom: 3px solid #3a5d67;
+}
+
+.tab_content1 {
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+}
+
+.post_list {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.post {
+    width: 200px;
+    height: 200px;
+    padding: 15px;
+    box-sizing: border-box;
+    border-radius: 25px 25px 25px 0;
+    overflow: hidden;
+    background-color: #c4cccc;
+    position: relative;
+}
+
+.post .forum_name {
+    display: inline-block;
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 500;
+    color: #f8f6f2;
+    padding: 5px 13px 3px;
+    background-color: #758d92;
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+
+.post .user_name {
+    position: absolute;
+    left: 15px;
+    bottom: 10px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.post .avatar {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.forum .more_btn {
+    padding: 0 25px;
+}
+
+/*dailylife-general_forum*/
+#dailylife .flex_box {
+    margin-top: 60px;
+    display: flex;
+    margin-bottom: 170px;
+}
+
+.general_forum table {
+    border-collapse: collapse;
+}
+
+.general_forum th {
+    width: 220px;
+    background-color: #3a5d67;
+    border: 2px #3a5d67 solid;
+    color: #f8f6f2;
+}
+
+.general_forum th .forum_title {
+    display: inline-block;
+    font-size: 22px;
+    line-height: 40px;
+    text-align: start;
+    padding: 15px 20px;
+    background: url(../image/forum_double_quotes1.png) top left no-repeat, url(../image/forum_double_quotes2.png) bottom right no-repeat;
+    margin-bottom: 600px;
+}
+
+.general_forum td {
+    width: 616px;
+    height: 300px;
+    padding: 0 20px;
+    border: 2px #3a5d67 solid;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.general_forum .post {
+    width: 180px;
+    height: 180px;
+}
+
+.general_forum td .subject {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.general_forum td .more_btn {
+    position: absolute;
+    top: 28px;
+    right: 30px;
+}
+
+/*dailylife-book_report*/
+.book_report {
+    padding-left: 30px;
+}
+
+.book_report .title {
+    font-size: 28px;
+    line-height: 28px;
+    color: #3a5d67;
+}
+
+ul.tabs2 {
+    display: flex;
+    align-items: end;
+}
+
+ul.tabs2 li {
+    filter: grayscale(1);
+    transition: all 0.3s;
+}
+
+ul.tabs2 li:hover {
+    filter: none;
+}
+
+html ul.tabs2 li.active {
+    filter: none;
+}
+
+.uppershelf {
+    width: 402px;
+    height: 238px;
+    margin-top: 25px;
+    background: url(../image/book_report_bg1.png) center bottom no-repeat;
+    position: relative;
+}
+
+.book1 {
+    position: absolute;
+    left: 31px;
+    bottom: 74px;
+}
+
+.book2 {
+    position: absolute;
+    left: 56px;
+    bottom: 74px;
+}
+
+.book3 {
+    position: absolute;
+    left: 141px;
+    bottom: 70px;
+    transform: rotate(-30deg);
+}
+
+.book4 {
+    position: absolute;
+    right: 70px;
+    bottom: 46px;
+    transform: rotate(90deg);
+}
+
+.book5 {
+    position: absolute;
+    right: 94px;
+    bottom: 8px;
+    transform: rotate(-90deg)
+}
+
+.undershelf {
+    width: 353px;
+    height: 261px;
+    margin-left: 97px;
+    background: url(../image/book_report_bg2.png) center bottom no-repeat;
+    position: relative;
+}
+
+.book6 {
+    position: absolute;
+    left: 98px;
+    bottom: 96px;
+    transform: rotate(-90deg);
+}
+
+.book7 {
+    position: absolute;
+    left: 90px;
+    bottom: 44px;
+    transform: rotate(-90deg);
+}
+
+.book8 {
+    position: absolute;
+    left: 100px;
+    bottom: 12px;
+    transform: rotate(90deg);
+}
+
+.book9 {
+    position: absolute;
+    right: 50px;
+    bottom: 75px;
+}
+
+.book10 {
+    position: absolute;
+    right: 20px;
+    bottom: 75px;
+}
+
+.book_inner {
+    position: relative;
+}
+
+.book_name {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 700;
+    color: #f8f6f2;
+    width: 20px;
+    word-wrap: break-word;
+    text-align: center;
+    line-height: 20px;
+}
+
+.tab_container2 {
+    margin-top: 25px;
+}
+
+.tab_content2 {
+    margin-top: 25px;
+    width: 100%;
+    height: 325px;
+    padding: 25px;
+    box-sizing: border-box;
+    background: url(../image/book_report_bg3.png) center center no-repeat;
+}
+
+.tab_content2 .forum_name {
+    display: inline-block;
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 700;
+    color: #3a5d67;
+    padding: 5px 13px 3px;
+    background-color: #f8f6f2;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+.tab_content2 .text_box {
+    width: 100%;
+    height: 230px;
+    padding: 15px;
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+/*footer*/
+#footer {
+    background: url(../image/community_footer_bg.png) center top no-repeat #f8f6f2;
+}
+
+.footer_inner {
+    width: 1320px;
+    margin: 0 auto;
+    padding: 80px 0;
+    color: #f8f6f2;
+    position: relative;
+}
+
+.footer_link_list {
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 45px;
+}
+
+.footer_link_list li {
+    padding: 0 20px;
+}
+
+.footer_inform_box {
+    display: flex;
+    justify-content: center;
+}
+
+.footer_inform_box .text_box {
+    padding: 0 20px;
+}
+
+.logo_box {
+    width: 130px;
+    position: absolute;
+    top: -20px;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo_box .blank {
+    width: 30px;
+    height: 110px;
+}
+
+/*top*/
+.top {
+    position: fixed;
+    bottom: 10px;
+    right: 20px;
+    width: 50px;
+}
+
+.top a {
+    display: inline-block;
+    padding: 10px 15px;
+    background: #000;
+    color: #fff;
+    margin-bottom: 5px;
+    border-radius: 50%;
+}

@@ -1,0 +1,49 @@
+@font-face {
+    font-family: 'MARUBuri';
+    src: url('MARUBuriot-SemiBold00.eot');
+    src: url('MARUBuriot-SemiBold00.eot?#iefix') format('embedded-opentype'),
+        url('MARUBuriot-SemiBold00.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'MARUBuri';
+    src: url('MARUBuriot-Regular00.eot');
+    src: url('MARUBuriot-Regular00.eot?#iefix') format('embedded-opentype'),
+        url('MARUBuriot-Regular00.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'MARUBuri';
+    src: url('MARUBuriot-Light00.eot');
+    src: url('MARUBuriot-Light00.eot?#iefix') format('embedded-opentype'),
+        url('MARUBuriot-Light00.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'MARUBuri';
+    src: url('MARUBuriot-ExtraLight00.eot');
+    src: url('MARUBuriot-ExtraLight00.eot?#iefix') format('embedded-opentype'),
+        url('MARUBuriot-ExtraLight00.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'MARUBuri';
+    src: url('MARUBuriot-Bold00.eot');
+    src: url('MARUBuriot-Bold00.eot?#iefix') format('embedded-opentype'),
+        url('MARUBuriot-Bold00.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
