@@ -69,7 +69,7 @@ $(function () {
     loop: true,
     autoplay: {
       delay: 2500,
-      disableOnInteraction: false,
+      disableOnInteraction: true,
     },
     navigation: {
       nextEl: ".swiper-button-next",
@@ -99,18 +99,16 @@ $(function () {
   });
 
   //puase_play_btn
-  var puaseButton = document.getElementById("new_swiper_pause")
-  puaseButton.addEventListener("click", (event) => {
+  $("#new_swiper_pause").click(function () {
     $("#new_swiper_play").show();
     $("#new_swiper_pause").hide();
-    new_Mainswiper.autoplay.pause();
+    new_Mainswiper.autoplay.stop();
   });
 
-  var playButton = document.getElementById("new_swiper_play")
-  playButton.addEventListener("click", (event) => {
+  $("#new_swiper_play").click(function () {
     $("#new_swiper_play").hide();
     $("#new_swiper_pause").show();
-    new_Mainswiper.autoplay.resume();
+    new_Mainswiper.autoplay.start();
   });
 
   //connect_main-sub
@@ -194,6 +192,7 @@ $(function () {
       delay: 3000,
       disableOnInteraction: false,
     },
+
     pagination: {
       el: ".swiper-pagination",
       type: "fraction",
@@ -312,6 +311,8 @@ $(function () {
 
 }); //hobby_swiper-End
 
+
+
 //📌hobby_swiper2
 $(function () {
 
@@ -351,6 +352,141 @@ $(function () {
     hobby_middle_Subswiper2.slideToLoop(idx);
     hobby_left_Subswiper2.slideToLoop(idx);
     hobby_right_Subswiper2.slideToLoop(idx);
+  });
+
+}); //hobby_swiper-End
+
+
+
+//📌hobby_swiper3
+$(function () {
+
+  //left_Subswiper
+  var hobby_left_Subswiper3 = new Swiper(".hobby_left_swiper3", {
+    slidesPerView: "2",
+    spaceBetween: 40,
+    loop: true,
+    touchRatio: 0,
+  });
+
+  //Mainswiper
+  var hobby_Mainswiper3 = new Swiper(".hobby_swiper3", {
+    loop: true,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+
+  //middle_Subswiper
+  var hobby_middle_Subswiper3 = new Swiper(".hobby_detail_swiper3", {
+    loop: true,
+    touchRatio: 0,
+  });
+
+  //right_Subswiper
+  var hobby_right_Subswiper3 = new Swiper(".hobby_right_swiper3", {
+    slidesPerView: "2",
+    spaceBetween: 40,
+    loop: true,
+    touchRatio: 0,
+  });
+
+  hobby_Mainswiper3.on('slideChange', function () {
+    idx = hobby_Mainswiper3.realIndex;
+    hobby_middle_Subswiper3.slideToLoop(idx);
+    hobby_left_Subswiper3.slideToLoop(idx);
+    hobby_right_Subswiper3.slideToLoop(idx);
+  });
+
+}); //hobby_swiper-End
+
+
+
+//📌hobby_swiper4
+$(function () {
+
+  //left_Subswiper
+  var hobby_left_Subswiper4 = new Swiper(".hobby_left_swiper4", {
+    slidesPerView: "2",
+    spaceBetween: 40,
+    loop: true,
+    touchRatio: 0,
+  });
+
+  //Mainswiper
+  var hobby_Mainswiper4 = new Swiper(".hobby_swiper4", {
+    loop: true,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+
+  //middle_Subswiper
+  var hobby_middle_Subswiper4 = new Swiper(".hobby_detail_swiper4", {
+    loop: true,
+    touchRatio: 0,
+  });
+
+  //right_Subswiper
+  var hobby_right_Subswiper4 = new Swiper(".hobby_right_swiper4", {
+    slidesPerView: "2",
+    spaceBetween: 40,
+    loop: true,
+    touchRatio: 0,
+  });
+
+  hobby_Mainswiper4.on('slideChange', function () {
+    idx = hobby_Mainswiper4.realIndex;
+    hobby_middle_Subswiper4.slideToLoop(idx);
+    hobby_left_Subswiper4.slideToLoop(idx);
+    hobby_right_Subswiper4.slideToLoop(idx);
+  });
+
+}); //hobby_swiper-End
+
+
+
+//📌hobby_swiper5
+$(function () {
+
+  //left_Subswiper
+  var hobby_left_Subswiper5 = new Swiper(".hobby_left_swiper5", {
+    slidesPerView: "2",
+    spaceBetween: 40,
+    loop: true,
+    touchRatio: 0,
+  });
+
+  //Mainswiper
+  var hobby_Mainswiper5 = new Swiper(".hobby_swiper5", {
+    loop: true,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+
+  //middle_Subswiper
+  var hobby_middle_Subswiper5 = new Swiper(".hobby_detail_swiper5", {
+    loop: true,
+    touchRatio: 0,
+  });
+
+  //right_Subswiper
+  var hobby_right_Subswiper5 = new Swiper(".hobby_right_swiper5", {
+    slidesPerView: "2",
+    spaceBetween: 40,
+    loop: true,
+    touchRatio: 0,
+  });
+
+  hobby_Mainswiper5.on('slideChange', function () {
+    idx = hobby_Mainswiper5.realIndex;
+    hobby_middle_Subswiper5.slideToLoop(idx);
+    hobby_left_Subswiper5.slideToLoop(idx);
+    hobby_right_Subswiper5.slideToLoop(idx);
   });
 
 }); //hobby_swiper-End

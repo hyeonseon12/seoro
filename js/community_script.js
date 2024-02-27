@@ -24,7 +24,7 @@ $(function () {
         $(this).addClass("active");
         $(".tab_content").hide();
 
-        var activeTab = $(this).find("a").attr("href");
+        var activeTab = $(this).find("span").attr("href");
 
         $(activeTab).fadeIn();
         return false;
