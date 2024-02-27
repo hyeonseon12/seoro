@@ -580,9 +580,13 @@ body {
     padding: 3px 40px 0px 20px;
     border: #454545 2px solid;
     border-radius: 20px;
-    margin-top: 190px;
+    margin-top: 30px;
     margin-left: 120px;
     background: url(../image/more_btn.png) 85% center no-repeat;
+}
+
+.shop_prod_list .title_box .btn_right {
+    margin-left: 35px;
 }
 
 .shop_prod_list .list_box {
@@ -813,11 +817,20 @@ body {
     margin-top: 30px;
 }
 
+.shop_subscribe_swiper .swiper-slide .prod_name_box {
+    width: 150px;
+    height: 270px;
+    position: relative;
+}
+
 .shop_subscribe_swiper .swiper-slide .name {
+    width: 150px;
     font-size: 20px;
     font-weight: 700;
     text-align: end;
-    margin-bottom: 60px;
+    position: absolute;
+    right: 40px;
+    bottom: 70px;
 }
 
 .shop_subscribe_prod .list_box .list_bg_border {
@@ -855,6 +868,10 @@ body {
 /*event*/
 .event_swiper {
     position: relative;
+}
+
+.event_swiper .swiper-slide img {
+    margin: 0 auto;
 }
 
 .event_swiper .swiper_btn_box {
@@ -942,14 +959,41 @@ body {
 
 .bookclub_inner .left_side {
     width: 50%;
+    padding-top: 50px;
 }
 
 .bookclub_inner .left_side .sticky_space {
-    padding-top: 100px;
+    padding-top: 50px;
     position: sticky;
     left: 0;
     top: 0;
-    height: 800px;
+    height: 850px;
+}
+
+.bookclub_inner .left_side .sticky_space_inner {
+    height: 850px;
+    position: relative;
+}
+
+.bookclub_inner .left_side .sticky_space .section_title {
+    position: absolute;
+    top: 35px;
+    left: 0;
+    z-index: 2;
+}
+
+.bookclub_inner .left_side .sticky_space .underline {
+    position: absolute;
+    top: 55px;
+    left: -20px;
+    z-index: 1;
+}
+
+.bookclub_inner .left_side .sticky_space .bg {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .bookclub_inner .right_side {
@@ -1239,7 +1283,7 @@ ul.category_tag_list li.active span {
 .hobby_mainswiper_wrap .swiper-slide-active .title_box {
     opacity: 1;
     transition: opacity 1s;
-    transition-delay: 0.4s;
+    transition-delay: 0.3s;
 }
 
 .hobby_mainswiper_wrap .title_box .title {
@@ -1278,7 +1322,7 @@ ul.category_tag_list li.active span {
     width: 360px;
     height: 220px;
     border-radius: 80px 80px 0 80px;
-    padding: 50px;
+    padding: 40px 45px;
     box-sizing: border-box;
     position: absolute;
     bottom: 0px;
@@ -1296,10 +1340,20 @@ ul.category_tag_list li.active span {
     justify-content: center;
 }
 
+.hobby_detail_swiper_wrap .text_box .detail {
+    width: 100%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    word-break: break-word;
+    display: -webkit-box;
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical;
+}
+
 .hobby_detail_swiper_wrap .swiper-slide-active .text_box {
     opacity: 1;
     transition: opacity 1s;
-    transition-delay: 0.4s;
+    transition-delay: 0.3s;
 }
 
 /*hobby-right*/
@@ -1429,13 +1483,22 @@ ul.category_tag_list li.active span {
     bottom: 10px;
     right: 20px;
     width: 50px;
+    z-index: 99;
 }
 
 .top a {
     display: inline-block;
-    padding: 10px 15px;
-    background: #000;
-    color: #fff;
+    width: 44px;
+    height: 44px;
+    background-color: rgba(69, 69, 69, 0.7);
     margin-bottom: 5px;
     border-radius: 50%;
+    position: relative;
+}
+
+.top a img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }

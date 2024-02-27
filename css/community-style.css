@@ -368,7 +368,7 @@ body {
     display: flex;
 }
 
-.tabs li a {
+.tabs li span {
     display: block;
     width: 500px;
     height: 200px;
@@ -386,19 +386,19 @@ body {
     margin-top: 8px;
 }
 
-.tabs li:first-child a {
+.tabs li:first-child span {
     margin: 0;
 }
 
-.tabs li:last-child a {
+.tabs li:last-child span {
     height: 165px;
 }
 
-.tabs li a:hover {
+.tabs li span:hover {
     background-color: #9dadaf;
 }
 
-.tabs li.active a {
+.tabs li.active span {
     font-weight: 500;
     color: #f8f6f2;
     background-color: #758d92;
