@@ -37,7 +37,7 @@
                 scriptTimeout: 3000,
                 async: true
             },
-                h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
+                h = d.documentElement, t = setTimeout(function () {h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";}, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () {a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try {Typekit.load(config)} catch (e) { } }; s.parentNode.insertBefore(tk, s)
         })(document);
     </script>
 
@@ -59,10 +59,10 @@
                                     alt="서로북카페 로고 이미지"></a>
                         </h1>
                         <ul id="gnb">
-                            <li><a href="#"><span>ABOUT</span></a>
+                            <li><a href="./about1.html"><span>ABOUT</span></a>
                                 <ul class="sub">
                                     <li><a href="./about1.html">브랜드 스토리</a></li>
-                                    <li><a href="#">서로 이야기</a></li>
+                                    <li><a href="./about2.html" target="_blank">서로 이야기</a></li>
                                 </ul>
                             </li>
                             <li><a href="#"><span>SHOP</span></a>
@@ -78,7 +78,7 @@
                                     <li><a href="#">캘린더</a></li>
                                 </ul>
                             </li>
-                            <li><a href="#"><span>COMMUNITY</span></a>
+                            <li><a href="./community.html" target="_blank"><span>COMMUNITY</span></a>
                                 <ul class="sub">
                                     <li><a href="#">서로의 일상</a></li>
                                     <li class="sub_sub"><a href="#">서로's Pick</a></li>
@@ -285,8 +285,12 @@
         </div>
     </div><!--fullpage-->
     <div class="top">
-        <a href="#firstPage">∧</a>
-        <a href="#lastPage">∨</a>
+        <a href="#header">
+            <img src="./image/top_btn1.png" alt="위로 가기 버튼 이미지">
+        </a>
+        <a href="#footer">
+            <img src="./image/top_btn2.png" alt="아래로 가기 버튼 이미지">
+        </a>
     </div><!--top-->
 
 
