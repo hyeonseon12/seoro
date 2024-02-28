@@ -186,7 +186,7 @@ body {
 #intro {
     width: 1320px;
     margin: 0 auto;
-    padding: 70px 0 100px;
+    padding: 70px 0 50px;
 }
 
 .intro_box {
@@ -263,7 +263,8 @@ body {
 #coffee {
     width: 1320px;
     margin: 0 auto;
-    padding-bottom: 170px;
+    padding-bottom: 120px;
+    padding-top: 50px;
 }
 
 .coffee_list {
@@ -349,11 +350,12 @@ body {
 #menu {
     width: 1320px;
     margin: 0 auto;
+    padding-top: 50px;
 }
 
 .menu_list {
     margin-top: 50px;
-    margin-bottom: 170px;
+    margin-bottom: 120px;
     display: flex;
     flex-wrap: wrap;
 }
@@ -438,6 +440,7 @@ body {
     width: 1320px;
     margin: 0 auto;
     padding-bottom: 100px;
+    padding-top: 50px;
 }
 
 #wrapper {
@@ -547,10 +550,6 @@ html ul.tabs li.active span {
 
 .place_list li:nth-child(2n) {
     padding-top: 50px;
-}
-
-.place_list .place_img {
-    overflow: hidden;
 }
 
 ul.place_list li:nth-child(4n-3) .place_img {
@@ -665,13 +664,22 @@ ul.place_list li:nth-child(4n) .place_name p {
     bottom: 10px;
     right: 20px;
     width: 50px;
+    z-index: 99;
 }
 
 .top a {
     display: inline-block;
-    padding: 10px 15px;
-    background: #000;
-    color: #fff;
+    width: 44px;
+    height: 44px;
+    background-color: rgba(69, 69, 69, 0.7);
     margin-bottom: 5px;
     border-radius: 50%;
+    position: relative;
+}
+
+.top a img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
