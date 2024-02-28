@@ -37,7 +37,7 @@
                 scriptTimeout: 3000,
                 async: true
             },
-                h = d.documentElement, t = setTimeout(function () {h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";}, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () {a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try {Typekit.load(config)} catch (e) { } }; s.parentNode.insertBefore(tk, s)
+                h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
         })(document);
     </script>
 
@@ -123,14 +123,14 @@
         </div><!--sec1-->
         <div class="section sec2">
             <div class="sec2_inner">
-                <div class="img_box" data-aos="zoom-out" data-aos-duration="2000"></div>
+                <div class="img_box" data-aos="zoom-out" data-aos-duration="2000" data-aos-delay="300"></div>
                 <div class="contents_box">
                     <p><img src="./image/about_text_border3.png" alt="텍스트 보더 이미지"></p>
                     <div class="text_box">
-                        <p class="text" data-aos="flip-up" data-aos-easing="ease-in">책이 가득
+                        <p class="text" data-aos="flip-up" data-aos-delay="300" data-aos-easing="ease-in">책이 가득
                             꽂힌 높은 책장,
                         </p>
-                        <p class="text" data-aos="flip-up" data-aos-delay="300" data-aos-easing="ease-in">그리고 책장으로
+                        <p class="text" data-aos="flip-up" data-aos-delay="600" data-aos-easing="ease-in">그리고 책장으로
                             둘러싸인 편안한 안락의자.</p>
                     </div>
                     <p><img src="./image/about_text_border4.png" alt="텍스트 보더 이미지"></p>
@@ -220,7 +220,7 @@
         </div>
         <div class="section sec7">
             <div class="sec7_inner">
-                <img src="./image/about_sec7_bg.jpg" alt="우주이미지" class="vision_bg">
+                <video src="./video/about3.mp4" data-autoplay muted playsinline loop class="vision_bg"></video>
                 <div class="vision_text_box">
                     <h1 class="vision_eng">TO EXPAND YOUR PERSPECTIVE</h1>
                     <H2 class="vision">당신이 더 멀리 확장될 수 있도록</H2>
@@ -285,10 +285,10 @@
         </div>
     </div><!--fullpage-->
     <div class="top">
-        <a href="#header">
+        <a href="#firstPage">
             <img src="./image/top_btn1.png" alt="위로 가기 버튼 이미지">
         </a>
-        <a href="#footer">
+        <a href="#lastPage">
             <img src="./image/top_btn2.png" alt="아래로 가기 버튼 이미지">
         </a>
     </div><!--top-->
